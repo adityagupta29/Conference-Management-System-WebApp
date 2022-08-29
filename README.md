@@ -5,21 +5,13 @@ This is a Node.js application, built using many popular modules like express, ej
 
 Step 1: Download the files
 
-Step 2: Make sure that your pc has node.js installed by
+Step 2: Make sure that your pc has node.js installed by typing node -v in your terminal if you get any value it means node.js is installed
 
-typing node -v in your terminal if you get any value it
-
-means node.js is installed
-
-Step 3: Navigate the directory in which the main folder is
-
-present in the terminal.
+Step 3: Navigate the directory in which the main folder is present in the terminal.
 
 Step 4: Type “npm install” command in the terminal.
 
-Step 5: Make sure that you have MongoDB install and
-
-running in the background.
+Step 5: Make sure that you have MongoDB install andrunning in the background.
 
 Step 5: Type “node app.js” command in the terminal.
 
