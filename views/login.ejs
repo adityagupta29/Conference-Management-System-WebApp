@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/form.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet" />
+
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="form-title">Dashboard</h1>
+
+
+        <div class="form-body">
+
+
+            <form action="/login" method="POST">
+
+
+                <div class="form">
+
+                    <input class="form-input" type="text" name="username" autocomplete="off" required />
+
+                    <label class="label-name" for="name">
+            <span class="content-name">Username</span>
+          </label>
+                </div>
+                <div class="form">
+                    <input type="password" name="password" autocomplete="off" required />
+                    <label class="label-name" for="name">
+            <span class="content-name">Password</span>
+          </label>
+                </div>
+                <div class="bttn">
+                    <button class="bttn-text">
+            Login
+          </button>
+                </div>
+
+
+
+            </form>
+
+
+
+
+            <ul class="login-more">
+               
+
+                <li>
+                    <span class="txt1">
+            Don’t have an account?
+          </span>
+
+                    <a href="/register" class="txt2">
+            Sign up
+          </a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</body>
+
+</html>

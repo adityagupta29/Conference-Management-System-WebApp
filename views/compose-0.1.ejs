@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        Admin | TeMeet</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet" />
+
+
+    <link rel="stylesheet" href="/css/style.css" />
+
+
+
+</head>
+
+<!-- ============start navigation bar=================== -->
+
+
+
+<!-- ============end navigation bar=================== -->
+
+<body>
+
+
+    <a name="top"></a>
+
+    <nav id="nav">
+
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <div class="logo">
+
+            <p id="brand">TeMeet
+            </p>
+
+           
+        </div>
+
+
+        <ul class="nav-links">
+
+       <li><a href="/" style="letter-spacing: 0.2px;">Home</a></li>
+            <li><a href="/about" style="letter-spacing: 0.2px;">About Us</a></li>
+            <li><a href="/contact" style="letter-spacing: 0.2px;">Contact Us</a></li>
+            <li><a href="#more " style="letter-spacing: 0.2px;">More</a></li>
+
+
+        </ul>
+        <a href="/login" class="nav-btn" id="button" style="letter-spacing: 0.2px; color: white;  font-size: 14px;">Create Meeting</a>
+    </nav>
+
+    <div class="compose">
+
+    
+
+
+
+    <style>
+
+
+      .compose{
+        margin: 80px 0px 0px 0px;
+      }
+
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      main {
+        display: flex;
+        flex-wrap: nowrap;
+        height: 100vh;
+        height: -webkit-fill-available;
+        max-height: 100vh;
+        overflow-x: auto;
+        overflow-y: hidden;
+      }
+    </style>
+
+    
+<main>
+  <div class="d-flex flex-column flex-shrink-0 p-3" style="width: 180px; background-color: rgb(245, 245, 245);">
+    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+      <span class="fs-4">Dashboard</span>
+    </a>
+    <hr>
+    <ul class="nav nav-pills flex-column mb-auto">
+      <li class="nav-item">
+        <a href="#" id="home" class="nav-link active" aria-current="page">
+          Home
+        </a>
+      </li>
+      <li>
+        <a href="#" id="list" class="nav-link" aria-current="page">
+          Dashboard
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nav-link link-dark">
+          Orders
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nav-link link-dark">
+          Products
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nav-link link-dark">
+          Customers
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div id="home-content">
+    <div class="row card" style="margin: 0px 10px 10px 10px; padding: 0px 20px 40px 20px; height: 580px">
+
+        <div class="col-lg-12">
+
+
+            
+            <form action="/compose" method="post">
+                <div class="form-group">
+
+                    <div class="row">
+                        <input  style="display: none;"  type="text" class="form-control"
+                        name="userName" value="<%=userName%>">
+
+                        <div class="col-lg-6 col-lg-6 col-sm-12">
+                            <label class="label"> Title</label>
+                            <br>
+                            <textarea type="text" class="form-control" name="meetingTitle" cols="2" rows="2"
+                                required></textarea>
+                        </div>
+
+
+
+                        <div class="col-lg-6 col-lg-6 col-sm-12">
+                            <label class="label"> Agenda </label>
+                            <textarea type="text" class="form-control" name="meetingAgenda" cols="20" rows="2"
+                                required></textarea>
+                        </div>
+
+                        <div class="col-lg-6 col-lg-6 col-sm-12">
+                            <label class="label"> Time & Date </label>
+                                <input type="text" class="form-control" placeholder="Ex- 05:00pm 2/01/22"
+                                name="meetingdat">
+
+                        </div>
+
+                       
+                        <div class="col-lg-6 col-lg-6 col-sm-12">
+                            <label class="label">Via</label>
+                            <div class="input-group mb-3">
+                                <select class="form-select" name="meetingType" id="inputGroupSelect02">
+                                    <option selected>Choose...</option>
+                                    <option value="gmeet">Google Meet</option>
+                                    <option value="zoom">Zoom</option>
+                                </select>
+                            </div>
+                        </div>
+
+
+                        <div class="col-lg-12 col-lg-12 col-sm-12" style="margin: 20px 0px 0px 0px;">
+
+                            <h5>Personal Details</h5>
+                        </div>
+
+
+                        <div class="col-lg-6 col-lg-6 col-sm-12"> <label class="label">Name </label>
+                            <input type="text" class="form-control" placeholder="Full Name"
+                                name="organisationName">
+
+                        </div>
+                        <div class="col-lg-6 col-lg-6 col-sm-12">
+                            <label class="label">Email </label>
+                            <input type="text" class="form-control" placeholder="Email"
+                                name="organisationEmail">
+                        </div>
+
+                        <div class="col-lg-6 col-lg-6 col-sm-12">
+
+                            <label class="label">Number </label>
+
+                            <input type="text" class="form-control" placeholder="Contact Number"
+                                name="organisationNumber">
+                        </div>
+                       
+                        <div class="col-lg-6 col-lg-6 col-sm-12">
+
+                            
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <br>
+                <button  class="btn button" type="submit" name="button">Publish</button>
+            </form>
+        </div>
+    </div>
+    </div>
+  <div  id="list-content"  class="row card" style="margin: 0px 10px 10px 10px; padding: 0px 20px 40px 20px; height: 580px">
+
+    <table class="table table-striped table-hover" style="margin-top: 50px; padding: 0px 0px; width: 1200px;">
+  
+
+        <tbody>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Conference</th>
+          <% for(var i=(users.length)-1; i>=0; i--){ %>
+          <tr>
+            <td><%=users[i].userName%></td>
+            <td><%=users[i].userEmail%></td>
+            <td><%=users[i].userMeetName%></td>
+          </tr>
+          <% } %>
+        </tbody>
+      </table>
+    </div>
+
+</main>
+
+
+
+<script>
+  $(document).ready(function(){
+
+
+        // $('list-content').hide();
+				$('#list-content').hide();
+
+			
+
+    $('#home').click(function(){
+        $('#list-content').hide();
+				$('#home-content').show();
+        $('#home').addClass('active');
+        $('#list').removeClass('active');
+			});
+
+      $('#list').click(function(){
+				$('#home-content').hide();
+				$('#list-content').show();
+        $('#list').addClass('active');
+        $('#home').removeClass('active');
+			});
+  });
+</script>
+</div>
+  
+    
+
+
+
+
+
+
+
+<script src="/js/index.js"></script>
+
+<!-- Font Awesome -->
+<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

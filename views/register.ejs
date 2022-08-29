@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Registration</title>
+
+
+    <link rel="stylesheet" href="css/registerstyle.css" />
+    <link rel="stylesheet" href="css/registeradvance.css" />
+</head>
+
+<body>
+ 
+
+    <div class=" formregister container block" style="margin-top: -40px;">
+        <div class="row" style="padding: 0px 200px;">
+            <div class="col-sm-6">
+                <div class="temeetmain">
+                    <h1 class="temeet">TeMeet</h1>
+                    <p class="temeet3" style="font-family:'Roboto', sans-serif; color: rgb(109, 107, 107);"><i>A Web Based Conference Management System.</i></p>
+                </div>
+            </div>
+            <div class="col-sm-6 ">
+                <div class="register ">
+                    <div class="form ">
+
+                        <form class="form-grp " action="/register" method="POST">
+                            <span class="temeet3" style="margin: 0px 0px 0px 0px; background-color: #E8F0FE; font-family: 'Roboto', sans-serif; font-weight: 100; font-size: 20px; color: #641bff; ">
+                                <b> <%-warning%> </b>
+                            </span>
+
+                            <div class="row">
+
+                                <div class="col-lg-6 col-sm-6 ">
+                                    <label>First name*</label><br>
+                                    <input type="text " name="fname" class="form-controls trans " autocomplete="off" required>
+                                </div>
+
+                                <div class="col-lg-6 col-sm-6 ">
+                                    <label>Last name*</label><br>
+                                    <input type="text " name="lname" class="form-controls trans " autocomplete="off" required>
+                                </div>
+                            </div>
+
+
+                            <div>
+                                <label>Email*</label> <br>
+                                <input type="text " name="email" class="form-controls trans " autocomplete="off" required>
+                            </div>
+
+                            <div class="row ">
+                                <div class="col-lg-6 ">
+                                    <label>Contact*</label><br>
+                                    <input type="text" name="contact"  min="5" max="10" class="form-controls trans " autocomplete="off" required>
+                                </div>
+
+                                <div class="col-lg-6 ">
+                                    <label>Other contacts</label><br>
+                                    <input type="text" name="contact2" class="form-controls trans " autocomplete="off">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label>College/Institute</label><br>
+                                <input type="text" name="college" class="form-controls trans " autocomplete="off">
+                            </div>
+
+
+                            <div class="row">
+                                <div class="col-lg-6 ">
+                                    <label>Country*</label><br>
+                                    <input type="text" name="country" class="form-controls trans " autocomplete="off" required>
+                                </div>
+
+                                <div class="col-lg-6 ">
+                                    <label>State*</label><br>
+                                    <input type="text" name="state" class="form-controls trans " autocomplete="off" required>
+                                </div>
+                            </div>
+
+
+                            <div>
+                                <label>Address*</label><br>
+                                <input type="text" name="address" class="form-controls trans " autocomplete="off" required>
+                            </div>
+
+
+
+
+                            <div>
+                                <label>Usename*</label><br>
+                                <input type="text" name="username" class="form-controls trans " autocomplete="off" required>
+                            </div>
+
+
+
+                            <div>
+                                <label>Password*</label><br>
+
+                                <input type="password" name="password" class="form-controls trans " autocomplete="off" required>
+                                <label>Use 8 or more characters with a mix of letters, numbers & symbols
+                                </label>
+                            </div>
+
+                            <button type="submit" name="button" class="bttn bttn-text ">
+                               submit
+                            </button>
+                        </form>
+                    </div>
+                    
+</body>
+
+</html>
